@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(151deg, #0F2B05, #000000 87.6%);
+    height: 100vh;
+    text-align: center;
+}
+
+
+
+body *{
+    font-family: 'Roboto';
+    
+}
+
+header{
+    padding: 75px 0;
+}
+
+.card{
+    display: inline-block;
+    width: 354px;
+    height: 508px;
+    background: url(./assets/bg-ignite.svg);
+
+
+    cursor: pointer;
+
+    opacity: 0;
+  transform: translateY(-100px);
+  animation: appear 0.4s forwards;
+
+  user-select: none;
+  -webkit-user-select: none;
+}
+.card > img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid yellow;
+    margin: 100px;
+
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.info {
+    color: white;
+    TEXT-ALIGN: LEFT;
+    margin-top: 10px;
+    margin-left: 60px;
+}
+
+.info h1 {
+  
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+
+}
+.info p{
+    font-size: 14px;
+    line-height: 160%;
+}
+
+@keyframes appear {
+    to {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
